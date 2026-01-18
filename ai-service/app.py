@@ -186,8 +186,10 @@ def analyze():
         "recommendations": recommendations
     })
 
+
 # =============================
-# Run Server (DEPLOYMENT SAFE)
+# Health Check
 # =============================
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001, debug=False)
+@app.route("/health", methods=["GET"])
+def health():
+    return jsonify({"status": "ok"})
