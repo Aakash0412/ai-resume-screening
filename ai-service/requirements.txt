@@ -1,8 +1,6 @@
 flask
-flask-limiter
+gunicorn
 sentence-transformers
-torch
 scikit-learn
 PyPDF2
-numpy
-gunicorn
+flask-limiter
