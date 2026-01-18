@@ -1,3 +1,8 @@
 flask
+flask-limiter
+sentence-transformers
+torch
 scikit-learn
 PyPDF2
+numpy
+gunicorn
